@@ -24,7 +24,7 @@ public class RouteConfig {
                                 .uri(profileServiceUrl))
                 .route("login",
                         route -> route.path("/login")
-                                .filters(f -> f.rewritePath("/login", "/credentials/login"))
+                                .filters(f -> f.rewritePath("/login", "/api/credentials/login"))
                                 .uri(authServiceUrl))
                 .build();
     }
